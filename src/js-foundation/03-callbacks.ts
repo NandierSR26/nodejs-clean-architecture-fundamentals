@@ -1,27 +1,34 @@
+interface User {
+  id: number;
+  name: string;
+}
+
 const users = [
   {
     id: 1,
-    name: 'John Doe'
+    name: "John Doe",
   },
   {
     id: 2,
-    name: 'Jane Doe'
+    name: "Jane Doe",
   },
-]
+];
 
-function getUserByID(id: number, callback: (err: string | null, data?: any) => void) {
+function getUserByID(
+  id: number,
+  callback: (err?: string, user?: User) => void
+) {
   const user = users.find(function (user) {
-    return user.id === id
-  })
+    return user.id === id;
+  });
 
-  if(!user) {
-    return callback(`User not found with id ${ id }`)
+  if (!user) {
+    return callback(`User not found with id ${id}`);
   }
 
-  return callback(null, user)
-
+  return callback(undefined, user);
 }
 
 module.exports = {
-  getUserByID
-}
+  getUserByID,
+};
