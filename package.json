@@ -1,0 +1,13 @@
+{
+  "name": "02-bases",
+  "version": "0.0.1",
+  "description": "Fundamentos de Node.js",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node src/app.js",
+    "dev": "node src/app.js"
+  },
+  "author": "Nandier Ruiz",
+  "license": "ISC"
+}
