@@ -10,9 +10,9 @@ import { buildLogger, getUUID, getAge } from "./plugins";
 // const { buildLogger } = require('./plugins')
 
 
-const logger = buildLogger('app.js')
-logger.log('Hola mundo')
-logger.error('Esto es algo malo')
+// const logger = buildLogger('app.js')
+// logger.log('Hola mundo')
+// logger.error('Esto es algo malo')
 
 
 // ! Referencia a la funcion factory y uso 
@@ -27,10 +27,10 @@ logger.error('Esto es algo malo')
 
 
 // ! peticiones http
- getPokemonById(1)
-  .then((pokemon) => console.log({ pokemon }))
-  .catch((err) => console.log(err))
-  .finally(() => console.log('Finalmente'));
+//  getPokemonById(1)
+//   .then((pokemon) => console.log({ pokemon }))
+//   .catch((err) => console.log(err))
+//   .finally(() => console.log('Finalmente'));
 
 // token de acceso
 // publicas
