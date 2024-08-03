@@ -4,7 +4,7 @@ const { USERNAME, windir } = process.env
 
 // console.table({ USERNAME, windir })
 
-const characters = ['Naruto', 'Sasuke', 'Kakashi', 'A']
+export const characters = ['Flash', 'Superman', 'Green Lantern', 'Batman']
 
 const [ , , , a ] = characters
 
