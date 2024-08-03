@@ -17,7 +17,8 @@ describe("plugins/logger-plugin", () => {
     const service = "test service";
 
     const logger = buildLogger(service);
-    
+    logger.log(message);
+
     expect(winstonLoggerMock).toHaveBeenCalledWith(
       "info",
       expect.objectContaining({
