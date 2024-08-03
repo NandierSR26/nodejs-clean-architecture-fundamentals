@@ -21,3 +21,6 @@ const { getPokemonById } = require('./js-foundation/06-promises')
   .catch((err) => console.log('Por favor intente nuevamente'))
   .finally(() => console.log('Finalmente'));
 
+// token de acceso
+// publicas
+
